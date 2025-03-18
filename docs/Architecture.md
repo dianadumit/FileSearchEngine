@@ -7,15 +7,15 @@
 
 ### 2. C4 model Architecture:
 #### a) System context diagram
-![](C4 Architecture Diagrams\SystemContextDiagram.png)
+![](C4ArchitectureDiagrams/ComponentsDiagram.drawio.png)
 
 
 #### b) Container diagram
-![](C4 Architecture Diagrams\ContainerDiagram.drawio.png)
+![](C4ArchitectureDiagrams/ContainerDiagram.drawio.png)
 
 
 #### c) Component diagram
-![](C4 Architecture Diagrams\ComponentsDiagram.drawio.png)
+![](C4ArchitectureDiagrams/ComponentsDiagram.drawio.png)
 
 
 #### d) Class diagram 
