@@ -2,10 +2,11 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        FindFiles findFiles = new FindFiles();
+        FileIndexer.clearPreviousRecords();
+        FileIndexer findFiles = new FileIndexer();
         String pathToFiles = "C://Users//dumit//Desktop//myFiles";
         File file = new File(pathToFiles);
-        findFiles.findFiles(file);
+        findFiles.indexFile(file);
         System.out.println(findFiles);
     }
 }
