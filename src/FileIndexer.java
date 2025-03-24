@@ -40,21 +40,6 @@ public class FileIndexer {
             PreparedStatement statement = databaseConnection.prepareStatement(sqlQuery);
 
             if (file.isFile()) {
-//this is better if reading big files
-//                try (BufferedReader reader = new BufferedReader(new FileReader(file.getAbsolutePath()))) {
-//                    String line;
-//                    while ((line = reader.readLine()) != null) {
-//                        System.out.println(line);
-//                    }
-//                } catch (
-//                        FileNotFoundException e) {
-//                    System.out.println("Cannot find the file:");
-//                    System.out.println(file.getAbsolutePath());
-//                } catch (
-//                        IOException e) {
-//                    System.out.println("There was an error during the process of locating the file");
-//                }
-
                 numberOfFiles++;
                 String content = new String(Files.readAllBytes(file.toPath()));
                 BasicFileAttributes attrs = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
@@ -70,12 +55,25 @@ public class FileIndexer {
                 for (File file1 : files) {
                     indexFile(file1);
                 }
-
                 statement.executeBatch();
-                System.out.println("Indexing completed.");
             }
         } catch (IOException | SQLException e) {
             e.printStackTrace();
         }
     }
 }
+
+//this is better if reading big files i'll see if i still need this
+//                try (BufferedReader reader = new BufferedReader(new FileReader(file.getAbsolutePath()))) {
+//                    String line;
+//                    while ((line = reader.readLine()) != null) {
+//                        System.out.println(line);
+//                    }
+//                } catch (
+//                        FileNotFoundException e) {
+//                    System.out.println("Cannot find the file:");
+//                    System.out.println(file.getAbsolutePath());
+//                } catch (
+//                        IOException e) {
+//                    System.out.println("There was an error during the process of locating the file");
+//                }
