@@ -5,30 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27f53780-0f9b-40c2-8bfa-4e355931caed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FileSearchEngine.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineSQL/FileSearchEngineSQL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngine.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Architecture.md" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/docs/Architecture.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/C4ArchitectureDiagrams/ComponentsDiagram.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ComponentsDiagram.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/C4ArchitectureDiagrams/ContainerDiagram.drawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ContainerDiagram.drawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/C4ArchitectureDiagrams/SystemContextDiagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/SystemContextDiagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileIndexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileIndexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,6 +72,15 @@
       <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation\src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="FileSearchEngineWorkersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="FileSearchEngineWorkers" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchmaster.FileSearchEngineWorkersApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +92,7 @@
       <workItem from="1744321610305" duration="440000" />
       <workItem from="1744322083402" duration="63000" />
       <workItem from="1744322264428" duration="38000" />
+      <workItem from="1744447054120" duration="4259000" />
     </task>
     <servers />
   </component>
