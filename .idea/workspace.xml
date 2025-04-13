@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="27f53780-0f9b-40c2-8bfa-4e355931caed" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
