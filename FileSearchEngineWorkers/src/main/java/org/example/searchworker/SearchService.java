@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 
 @Service
 public class SearchService {
@@ -16,23 +17,32 @@ public class SearchService {
     private String folderPath;
 
     public List<String> performSearch(String query) {
-        List<String> results = new ArrayList<>();
-
+        TreeMap<Integer, List<String>> sortedResults = new TreeMap<>();
         File dir = new File(folderPath);
         if (!dir.exists() || !dir.isDirectory()) {
-            results.add("Directory not found or invalid: " + folderPath);
-            return results;
+            return List.of("Directory not found or invalid: " + folderPath);
         }
-        recursiveSearch(dir, query, results);
-        return results;
+        recursiveSearch(dir, query, sortedResults);
+
+        List<String> finalResults = new ArrayList<>();
+        System.out.println("Sorted Results Map: " + sortedResults);
+
+        for (List<String> group : sortedResults.descendingMap().values()) {
+            finalResults.addAll(group);
+        }
+        return finalResults;
     }
 
-    private void recursiveSearch(File file, String query, List<String> results) {
+    private void recursiveSearch(File file, String query, TreeMap<Integer, List<String>> results) {
         if (file.isFile()) {
             try {
                 String content = new String(Files.readAllBytes(file.toPath()));
-                if (file.getName().contains(query) || content.contains(query)) {
-                    results.add(file.getName() + " (path: " + file.getAbsolutePath() + ")");
+                int frequencyScore = countOccurrences(content.toLowerCase(), query.toLowerCase());
+                if (frequencyScore > 0) {
+                    String resultEntry = file.getName()
+                            + " (path: " + file.getAbsolutePath()
+                            + " appears " + frequencyScore + " times)";
+                    results.computeIfAbsent(frequencyScore, k -> new ArrayList<>()).add(resultEntry);
                 }
             } catch (IOException e) {
                 System.err.println("Error reading file " + file.getAbsolutePath());
@@ -46,5 +56,18 @@ public class SearchService {
                 }
             }
         }
+    }
+
+    private int countOccurrences(String content, String query) {
+        if (content == null || query == null || query.isEmpty()) {
+            return 0;
+        }
+        int count = 0;
+        int index = 0;
+        while ((index = content.indexOf(query, index)) != -1) {
+            count++;
+            index += query.length();
+        }
+        return count;
     }
 }

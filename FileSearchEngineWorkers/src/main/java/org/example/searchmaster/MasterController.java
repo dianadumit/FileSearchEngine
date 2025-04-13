@@ -29,7 +29,6 @@ public class MasterController {
             logger.info("Result for query '{}' not found in cache", query);
         }
         List<String> results = communicationService.sendSearchRequest(query);
-        //add sorting for results
         return results;
     }
 }
