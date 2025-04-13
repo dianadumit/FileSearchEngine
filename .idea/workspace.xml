@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27f53780-0f9b-40c2-8bfa-4e355931caed" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/CommunicationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/WorkerSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,35 +47,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SD/FileSearchEngine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/SD/FileSearchEngine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation" />
       <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SD\FileSearchEngine\FileSearchEngineWorkers\src\main\resources" />
       <recent name="D:\SD\FileSearchEngine" />
       <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Worker3">
     <configuration name="FileSearchEngineWorkersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="FileSearchEngineWorkers" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchmaster.FileSearchEngineWorkersApplication" />
@@ -80,6 +94,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MasterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="FileSearchEngineWorkers" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchmaster.MasterApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Worker1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="FileSearchEngineWorkers" />
+      <option name="PROGRAM_PARAMETERS" value="--server.port=3001 --worker.folder.path=D:\PL" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Worker2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="FileSearchEngineWorkers" />
+      <option name="PROGRAM_PARAMETERS" value="java -jar target/FileSearchEngineWorkers.jar --server.port=3002 --worker.folder.path=C:\Users\dumit\Desktop\faculta\IP" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Worker3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="FileSearchEngineWorkers" />
+      <option name="PROGRAM_PARAMETERS" value="java -jar target/FileSearchEngineWorkers.jar --server.port=3003 --worker.folder.path=C:\Users\dumit\Desktop\faculta\CN " />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.FileSearchEngineWorkersApplication" />
+      <item itemvalue="Spring Boot.Worker1" />
+      <item itemvalue="Spring Boot.Worker2" />
+      <item itemvalue="Spring Boot.Worker3" />
+      <item itemvalue="Spring Boot.MasterApp" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,7 +144,9 @@
       <workItem from="1744321610305" duration="440000" />
       <workItem from="1744322083402" duration="63000" />
       <workItem from="1744322264428" duration="38000" />
-      <workItem from="1744447054120" duration="4259000" />
+      <workItem from="1744447054120" duration="9808000" />
+      <workItem from="1744488298330" duration="32000" />
+      <workItem from="1744563928001" duration="660000" />
     </task>
     <servers />
   </component>
