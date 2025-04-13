@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FileSearchEngine.iml" filepath="$PROJECT_DIR$/.idea/FileSearchEngine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/FileSearchEngineSQL/FileSearchEngineSQL.iml" filepath="$PROJECT_DIR$/FileSearchEngineSQL/FileSearchEngineSQL.iml" />
     </modules>
   </component>
 </project>

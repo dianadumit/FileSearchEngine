@@ -4,10 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27f53780-0f9b-40c2-8bfa-4e355931caed" name="Changes" comment="">
+    <list default="true" id="04094d0d-8bd7-470c-95c0-b221dfb06b60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/FileSearchApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/ui/SearchFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/util/FileChooserUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchmaster/MasterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineWorkers/src/main/java/org/example/searchworker/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_11_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_20_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_aop_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_beans_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_context_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_core_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_expression_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_web_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/FileSearchEngineSQL.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/Architecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ComponentsDiagram.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ContainerDiagram.drawio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/SystemContextDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileIndexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/file-search-engine-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/file-search-engine-1.0.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +96,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2vYUgBxJxDm9LYlrCFX6BSC8V2m" />
+  <component name="ProjectId" id="2vh1JmkkXmRcclWnqJrQb6oYUvi" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -40,104 +109,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
+    "Application.FileSearchApp.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SD/FileSearchEngine",
+    "last_opened_file_path": "D:/SD/FileSearchEngine/FileSearchEngineDatabase",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation" />
-      <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation\src" />
+      <recent name="D:\SD\FileSearchEngine\FileSearchEngineDatabase" />
+      <recent name="D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\example" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SD\FileSearchEngine\FileSearchEngineWorkers\src\main\resources" />
-      <recent name="D:\SD\FileSearchEngine" />
-      <recent name="D:\SD\FileSearchEngine\FileSearchEngineSQLIndexation\src" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="MicronautRunConfigurationType" />
-        <option value="QuarkusRunConfigurationType" />
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.Worker3">
-    <configuration name="FileSearchEngineWorkersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="FileSearchEngineWorkers" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchmaster.FileSearchEngineWorkersApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MasterApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="FileSearchEngineWorkers" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchmaster.MasterApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Worker1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="FileSearchEngineWorkers" />
-      <option name="PROGRAM_PARAMETERS" value="--server.port=3001 --worker.folder.path=D:\PL" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Worker2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="FileSearchEngineWorkers" />
-      <option name="PROGRAM_PARAMETERS" value="java -jar target/FileSearchEngineWorkers.jar --server.port=3002 --worker.folder.path=C:\Users\dumit\Desktop\faculta\IP" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Worker3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="FileSearchEngineWorkers" />
-      <option name="PROGRAM_PARAMETERS" value="java -jar target/FileSearchEngineWorkers.jar --server.port=3003 --worker.folder.path=C:\Users\dumit\Desktop\faculta\CN " />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.searchworker.WorkerApp" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.FileSearchEngineWorkersApplication" />
-      <item itemvalue="Spring Boot.Worker1" />
-      <item itemvalue="Spring Boot.Worker2" />
-      <item itemvalue="Spring Boot.Worker3" />
-      <item itemvalue="Spring Boot.MasterApp" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="27f53780-0f9b-40c2-8bfa-4e355931caed" name="Changes" comment="" />
-      <created>1744321609240</created>
+      <changelist id="04094d0d-8bd7-470c-95c0-b221dfb06b60" name="Changes" comment="" />
+      <created>1744582422984</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1744321609240</updated>
-      <workItem from="1744321610305" duration="440000" />
-      <workItem from="1744322083402" duration="63000" />
-      <workItem from="1744322264428" duration="38000" />
-      <workItem from="1744447054120" duration="9808000" />
-      <workItem from="1744488298330" duration="32000" />
-      <workItem from="1744563928001" duration="660000" />
+      <updated>1744582422984</updated>
+      <workItem from="1744582424037" duration="47000" />
+      <workItem from="1744582499561" duration="1635000" />
     </task>
     <servers />
   </component>
