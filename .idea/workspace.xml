@@ -5,77 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04094d0d-8bd7-470c-95c0-b221dfb06b60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/FileSearchApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/ui/SearchFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/util/FileChooserUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_20_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_aop_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_beans_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_context_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_core_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_expression_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_jcl_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_web_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_springframework_spring_webmvc_6_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/libraries/Maven__org_yaml_snakeyaml_1_33.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/FileSearchEngineSQL.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/Architecture.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ComponentsDiagram.drawio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/ContainerDiagram.drawio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/docs/C4ArchitectureDiagrams/SystemContextDiagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/database/DatabaseConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileIndexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/FileSearch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/src/iteration1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/file-search-engine-1.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/file-search-engine-1.0.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineSQL/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/FileSearchApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/FileSearchApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/database/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/database/DatabaseConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/search/FileSearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/search/FileSearchService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/util/FileChooserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/util/FileChooserUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1744582422984</updated>
       <workItem from="1744582424037" duration="47000" />
-      <workItem from="1744582499561" duration="1635000" />
+      <workItem from="1744582499561" duration="8172000" />
     </task>
     <servers />
   </component>

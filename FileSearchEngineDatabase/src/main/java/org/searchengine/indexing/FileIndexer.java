@@ -39,7 +39,9 @@ public class FileIndexer {
              PreparedStatement statement = conn.prepareStatement(INSERT_FILES)) {
 
             fileCount++;
-            String content = new String(Files.readAllBytes(file.toPath()));
+            byte[] rawBytes = Files.readAllBytes(file.toPath());
+            String content = new String(rawBytes).replace("\u0000", "");
+
             BasicFileAttributes attrs = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
 
             statement.setString(1, file.getName());
