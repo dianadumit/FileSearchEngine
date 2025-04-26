@@ -18,6 +18,7 @@ public class FileSearchService {
     public static String searchFiles(String query) {
         Map<String, List<String>> queryParts = parseQuery(query);
         StringBuilder sqlBuilder = new StringBuilder("SELECT filename, filepath, content FROM files WHERE ");
+
         List<String> conditions = new ArrayList<>();
         List<String> parameters = new ArrayList<>();
 
@@ -60,6 +61,7 @@ public class FileSearchService {
         }
 
         sqlBuilder.append(String.join(" AND ", conditions));
+        sqlBuilder.append(" ORDER BY score DESC");
 
         System.out.println("Generated SQL: " + sqlBuilder);
         System.out.println("Parameters: " + parameters);

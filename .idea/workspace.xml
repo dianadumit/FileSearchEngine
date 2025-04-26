@@ -6,16 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04094d0d-8bd7-470c-95c0-b221dfb06b60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/indexing/FileIndexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/src/main/java/org/searchengine/search/FileSearchService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/FileSearchApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/FileSearchApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/database/DatabaseConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/database/DatabaseConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/search/FileSearchService.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/search/FileSearchService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/util/FileChooserUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/util/FileChooserUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +46,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SD/FileSearchEngine/FileSearchEngineDatabase",
+    "last_opened_file_path": "D:/SD/FileSearchEngine/FileSearchEngineWorkers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1744582422984</updated>
       <workItem from="1744582424037" duration="47000" />
-      <workItem from="1744582499561" duration="8172000" />
+      <workItem from="1744582499561" duration="9013000" />
+      <workItem from="1744636963251" duration="15000" />
     </task>
     <servers />
   </component>
