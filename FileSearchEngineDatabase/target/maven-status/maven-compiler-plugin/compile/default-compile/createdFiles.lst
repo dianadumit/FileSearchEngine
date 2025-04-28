@@ -1,8 +1,13 @@
 org\searchengine\database\DatabaseConnection.class
-org\searchengine\ui\SearchFrame$1.class
-org\searchengine\util\FileChooserUtil.class
+org\searchengine\report\ReportData.class
+org\searchengine\util\SqlQueries.class
 org\searchengine\FileSearchApp.class
 org\searchengine\ui\SearchFrame$1$1.class
 org\searchengine\ui\SearchFrame.class
-org\searchengine\search\FileSearchService.class
 org\searchengine\indexing\FileIndexer.class
+org\searchengine\report\ReportGenerator.class
+org\searchengine\ui\SearchFrame$1.class
+org\searchengine\report\JSONReportGenerator.class
+org\searchengine\util\FileChooserUtil.class
+org\searchengine\report\TextReportGenerator.class
+org\searchengine\search\FileSearchService.class

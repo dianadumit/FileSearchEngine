@@ -1,105 +1,155 @@
 package org.searchengine.ui;
 
+import org.searchengine.indexing.FileIndexer;
 import org.searchengine.search.FileSearchService;
+import org.searchengine.util.FileChooserUtil;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
+import javax.swing.event.*;
 import java.awt.*;
+import java.io.*;
+import java.time.Instant;
 
 public class SearchFrame extends JFrame {
-
     private final JTextField searchField;
     private final JTextArea resultArea;
+    private final JComboBox<String> formatBox;
+    private final JButton indexButton;
 
     public SearchFrame() {
         setTitle("File Search Engine");
-        setSize(700, 500);
+        setSize(700, 550);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // center the window
+        setLocationRelativeTo(null);
 
-        JPanel mainPanel = new JPanel(new BorderLayout());
-        mainPanel.setBackground(new Color(240, 170, 230));
-        mainPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
+        JPanel controlPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 10));
+        controlPanel.setBackground(new Color(240, 170, 230));
+        controlPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 
-        JLabel titleLabel = new JLabel("File Search Engine", SwingConstants.CENTER);
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 20));
-        titleLabel.setForeground(Color.BLACK);
-        titleLabel.setOpaque(true);
-        titleLabel.setBackground(new Color(240, 200, 250));
-        titleLabel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        formatBox = new JComboBox<>(new String[]{"Text", "JSON"});
+        formatBox.setSelectedItem("Text");
+        controlPanel.add(new JLabel("Report Format:"));
+        controlPanel.add(formatBox);
+
+        indexButton = new JButton("Start Indexing");
+        controlPanel.add(indexButton);
+
+        JPanel searchPanel = new JPanel(new BorderLayout(5, 5));
+        searchPanel.setBorder(new EmptyBorder(10, 10, 10, 10));
+        searchPanel.setBackground(new Color(240, 170, 230));
 
         searchField = new JTextField();
-        searchField.setPreferredSize(new Dimension(500, 30));
         searchField.setFont(new Font("Arial", Font.PLAIN, 16));
-        searchField.setBackground(Color.WHITE);
-        searchField.setForeground(new Color(50, 50, 50));
-        searchField.setBorder(BorderFactory.createCompoundBorder(
-                BorderFactory.createLineBorder(Color.GRAY, 1),
-                BorderFactory.createEmptyBorder(5, 10, 5, 10)
-        ));
+        searchField.setEnabled(false);
+        searchPanel.add(searchField, BorderLayout.NORTH);
 
         resultArea = new JTextArea();
         resultArea.setEditable(false);
         resultArea.setFont(new Font("Arial", Font.PLAIN, 14));
-        resultArea.setBackground(new Color(240, 200, 230));
-        resultArea.setForeground(new Color(50, 50, 50));
-        resultArea.setBorder(new EmptyBorder(10, 10, 10, 10));
-        JScrollPane resultScrollPane = new JScrollPane(resultArea);
-        resultScrollPane.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
+        JScrollPane scroller = new JScrollPane(resultArea);
+        searchPanel.add(scroller, BorderLayout.CENTER);
 
-        JPanel titleAndSearchPanel = new JPanel(new BorderLayout());
-        titleAndSearchPanel.setBackground(new Color(240, 170, 230));
-        titleAndSearchPanel.add(titleLabel, BorderLayout.NORTH);
-        titleAndSearchPanel.add(searchField, BorderLayout.SOUTH);
+        setLayout(new BorderLayout());
+        add(controlPanel, BorderLayout.NORTH);
+        add(searchPanel, BorderLayout.CENTER);
 
-        mainPanel.add(titleAndSearchPanel, BorderLayout.NORTH);
-        mainPanel.add(resultScrollPane, BorderLayout.CENTER);
-        add(mainPanel);
-
-        addSearchListener();
+        indexButton();
+        searchField();
     }
 
-    private void addSearchListener() {
-        searchField.getDocument().addDocumentListener(new DocumentListener() {
-            @Override
-            public void insertUpdate(DocumentEvent e) {
-                performSearch();
-            }
+    private void indexButton() {
+        indexButton.addActionListener(evt -> {
+            String format = ((String) formatBox.getSelectedItem()).toLowerCase();
+            FileIndexer.setReportFormat(format);
 
-            @Override
-            public void removeUpdate(DocumentEvent e) {
-                performSearch();
-            }
+            File dir = FileChooserUtil.selectDirectory("Select folder to index");
+            if (dir == null) return;
 
-            @Override
-            public void changedUpdate(DocumentEvent e) {
-                performSearch();
-            }
+            indexButton.setEnabled(false);
+            formatBox.setEnabled(false);
+            searchField.setEnabled(false);
+            resultArea.setText("Indexing… please wait.\n");
+            SwingWorker<String, Void> worker = new SwingWorker<>() {
+                @Override
+                protected String doInBackground() {
+                    try {
+                        FileIndexer.resetMetrics();
+                        FileIndexer.clearPreviousRecords();
+                        FileIndexer.setStartTime(Instant.now());
+                        FileIndexer.indexDirectory(dir);
+                        FileIndexer.setEndTime(Instant.now());
 
-            private void performSearch() {
-                String query = searchField.getText().trim();
-                if (query.isEmpty()) {
-                    resultArea.setText("");
-                    return;
+                        return FileIndexer.writeReportToFile();
+                    } catch (IOException e) {
+                        return null;
+                    }
                 }
-                SwingWorker<String, Void> worker = new SwingWorker<String, Void>() {
-                    @Override
-                    protected String doInBackground() {
-                        return FileSearchService.searchFiles(query);
-                    }
 
-                    @Override
-                    protected void done() {
-                        try {
-                            resultArea.setText(get());
-                        } catch (Exception e) {
-                            resultArea.setText("Error retrieving results.");
-                        }
+                @Override
+                protected void done() {
+                    String reportPath;
+                    try {
+                        reportPath = get();
+                    } catch (Exception ex) {
+                        reportPath = null;
                     }
-                };
-                worker.execute();
+                    if (reportPath != null) {
+                        JOptionPane.showMessageDialog(
+                                SearchFrame.this,
+                                "Index complete!\nReport written to:\n" + reportPath,
+                                "Done",
+                                JOptionPane.INFORMATION_MESSAGE);
+                    } else {
+                        JOptionPane.showMessageDialog(
+                                SearchFrame.this,
+                                "Indexing finished but report failed to write.",
+                                "Error",
+                                JOptionPane.ERROR_MESSAGE);
+                    }
+                    searchField.setEnabled(true);
+                    indexButton.setEnabled(true);
+                    formatBox.setEnabled(true);
+                    resultArea.setText("");
+                }
+            };
+            worker.execute();
+        });
+    }
+
+    private void searchField() {
+        searchField.getDocument().addDocumentListener(new DocumentListener() {
+            public void insertUpdate(DocumentEvent e) {
+                search();
+            }
+
+            public void removeUpdate(DocumentEvent e) {
+                search();
+            }
+
+            public void changedUpdate(DocumentEvent e) {
+                search();
+            }
+
+            private void search() {
+                String q = searchField.getText().trim();
+                if (q.isEmpty()) {
+                    resultArea.setText("");
+                } else {
+                    new SwingWorker<String, Void>() {
+                        protected String doInBackground() {
+                            return FileSearchService.searchFiles(q);
+                        }
+
+                        protected void done() {
+                            try {
+                                resultArea.setText(get());
+                            } catch (Exception ex) {
+                                resultArea.setText("Search error.");
+                            }
+                        }
+                    }.execute();
+                }
             }
         });
     }

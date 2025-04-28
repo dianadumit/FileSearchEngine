@@ -1,0 +1,17 @@
+Index Report
+Start Time      : 2025-04-28T08:32:26.851317500Z
+End Time        : 2025-04-28T08:32:27.023512500Z
+Total Duration  : 0 seconds
+Indexed Files (8):
+  D:\PL\L1.pl
+  D:\PL\L2.pl
+  D:\PL\L3.pl
+  D:\PL\L4.pl
+  D:\PL\L5.pl
+  D:\PL\L6.pl
+  D:\PL\L7.pl
+  D:\PL\L8.pl
+
+Skipped Files (0):
+
+Failed Files (0):

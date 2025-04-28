@@ -1,6 +1,11 @@
-D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\database\DatabaseConnection.java
 D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\FileSearchApp.java
-D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\indexing\FileIndexer.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\report\TextReportGenerator.java
 D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\search\FileSearchService.java
-D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\ui\SearchFrame.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\indexing\FileIndexer.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\util\SqlQueries.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\report\JSONReportGenerator.java
 D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\util\FileChooserUtil.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\report\ReportGenerator.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\report\ReportData.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\database\DatabaseConnection.java
+D:\SD\FileSearchEngine\FileSearchEngineDatabase\src\main\java\org\searchengine\ui\SearchFrame.java

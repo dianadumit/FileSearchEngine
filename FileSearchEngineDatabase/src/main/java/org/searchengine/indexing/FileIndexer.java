@@ -1,18 +1,14 @@
 package org.searchengine.indexing;
 
 import org.searchengine.database.DatabaseConnection;
+import org.searchengine.report.*;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
+import java.io.*;
+import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Timestamp;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.sql.*;
+import java.time.Instant;
+import java.util.*;
 
 import static org.searchengine.util.SqlQueries.*;
 public class FileIndexer {
@@ -24,7 +20,31 @@ public class FileIndexer {
 
     private static int directoryCount = 0;
     private static int fileCount = 0;
+    private static String reportFormat = "text";
+    private static final List<String> indexedPaths = new ArrayList<>();
+    private static final List<String> skippedPaths = new ArrayList<>();
+    private static final List<String> failedPaths  = new ArrayList<>();
 
+    private static Instant startTime;
+    private static Instant endTime;
+
+    public static void setStartTime(Instant startTime) {
+        FileIndexer.startTime = startTime;
+    }
+
+    public static void setEndTime(Instant endTime) {
+        FileIndexer.endTime = endTime;
+    }
+
+    public static void resetMetrics() {
+        directoryCount = 0;
+        fileCount = 0;
+        indexedPaths.clear();
+        skippedPaths.clear();
+        failedPaths.clear();
+        startTime = null;
+        endTime = null;
+    }
     public static void indexDirectory(File root) {
         if (root == null || !root.exists()) return;
 
@@ -42,38 +62,12 @@ public class FileIndexer {
         System.out.printf("Indexed %d files in %d directories.%n", fileCount, directoryCount);
     }
 
-    private static void traverse(File file, PreparedStatement statement, Connection connection) throws IOException, SQLException {
-        if (file.isDirectory()) {
-            directoryCount++;
-            File[] dirs = file.listFiles();
-            if (dirs != null) {
-                for (File subDir : dirs) {
-                    traverse(subDir, statement, connection);
-                }
-            }
-        } else if (file.isFile()) {
-            String ext = getExtension(file).toLowerCase();
-            long size = file.length();
-
-            if (!TEXT_EXTENSIONS.contains(ext) || size > 10000000) {
-                return;
-            }
-
-            indexFile(file, statement);
-            if (fileCount % FLUSH_THRESHOLD == 0) {
-                statement.executeBatch();
-                connection.commit();
-            }
-        }
-    }
-
     private static void indexFile(File file, PreparedStatement statement) throws IOException, SQLException {
         fileCount++;
 
         byte[] rawBytes = Files.readAllBytes(file.toPath());
         String content = new String(rawBytes).replace("\u0000", "");
-        BasicFileAttributes attrs = Files.readAttributes(
-                file.toPath(), BasicFileAttributes.class);
+        BasicFileAttributes attrs = Files.readAttributes(file.toPath(), BasicFileAttributes.class);
 
         double score = computeScore(file, attrs);
 
@@ -84,6 +78,35 @@ public class FileIndexer {
         statement.setTimestamp(5, new Timestamp(attrs.lastModifiedTime().toMillis()));
         statement.setDouble(6, score);
         statement.addBatch();
+    }
+    private static void traverse(File file, PreparedStatement statement, Connection connection) throws IOException, SQLException {
+        if (file.isDirectory()) {
+            directoryCount++;
+            File[] dirs = file.listFiles();
+            if (dirs != null) {
+                for (File subDir : dirs) {
+                    traverse(subDir, statement, connection);
+                }
+            }
+        } else if (file.isFile()) {
+            String extension = getExtension(file).toLowerCase();
+            long size = file.length();
+
+            if (!TEXT_EXTENSIONS.contains(extension) || size > 10000000) {
+                skippedPaths.add(file.getAbsolutePath());
+                return;
+            }
+            try {
+                indexFile(file, statement);
+                indexedPaths.add(file.getAbsolutePath());
+                if (fileCount % FLUSH_THRESHOLD == 0) {
+                    statement.executeBatch();
+                    connection.commit();
+                }
+            } catch (Exception ex) {
+                failedPaths.add(file.getAbsolutePath());
+            }
+        }
     }
 
     private static String getExtension(File file) {
@@ -141,4 +164,25 @@ public class FileIndexer {
             e.printStackTrace();
         }
     }
+
+    public static void setReportFormat(String reportFormat) {
+        reportFormat = reportFormat.toLowerCase();
+        if ("json".equals(reportFormat) || "text".equals(reportFormat)) {
+            FileIndexer.reportFormat = reportFormat;
+        } else {
+            System.out.printf("Unknown format '%s', defaulting to text.%n", reportFormat);
+            FileIndexer.reportFormat = "text";
+        }
+    }
+
+    public static String writeReportToFile() throws IOException {
+        ReportData data = new ReportData(indexedPaths, skippedPaths, failedPaths, startTime, endTime
+        );
+        ReportGenerator gen = "json".equals(reportFormat)
+                ? new JSONReportGenerator()
+                : new TextReportGenerator();
+
+        return gen.writeReport(data);
+    }
+
 }
