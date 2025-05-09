@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04094d0d-8bd7-470c-95c0-b221dfb06b60" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TradingSystem/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/index_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/index_report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/indexing/FileIndexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/FileSearchEngineDatabase/target/classes/org/searchengine/ui/SearchFrame.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/SD/FileSearchEngine/FileSearchEngineWorkers",
+    "last_opened_file_path": "D:/SD/FileSearchEngine/TradingSystem",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +80,7 @@
       <workItem from="1744582424037" duration="47000" />
       <workItem from="1744582499561" duration="9013000" />
       <workItem from="1744636963251" duration="15000" />
+      <workItem from="1746817007083" duration="69000" />
     </task>
     <servers />
   </component>
