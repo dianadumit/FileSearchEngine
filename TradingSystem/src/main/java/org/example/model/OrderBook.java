@@ -1,6 +1,7 @@
 package org.example.model;
 
 import org.example.event.OrderPlaced;
+
 import java.util.*;
 
 public class OrderBook {
@@ -37,4 +38,11 @@ public class OrderBook {
         executedOrders.add(orderId);
         activeOrders.remove(orderId);
     }
+
+    public void reset() {
+        activeOrders.clear();
+        cancelledOrders.clear();
+        executedOrders.clear();
+    }
+
 }

@@ -29,5 +29,19 @@ public class Main {
         System.out.println("Is buy1 executed? " + state.getOrderBook().isExecuted("buy1"));
         System.out.println("Is sell1 executed? " + state.getOrderBook().isExecuted("sell1"));
         System.out.println("Is buy2 cancelled? " + state.getOrderBook().isCancelled("buy2"));
+
+        System.out.println();
+        System.out.println("Reconstruction");
+        SystemState rebuiltState = new SystemState();
+        rebuiltState.reset();
+        rebuiltState.replayAll(store.getAllEvents());
+
+        System.out.println("R: User1 balance: " + rebuiltState.getAccountManager().getBalance("user1"));
+        System.out.println("R: User2 balance: " + rebuiltState.getAccountManager().getBalance("user2"));
+
+        System.out.println("R: Is buy1 active? " + (rebuiltState.getOrderBook().getOrder("buy1") != null));
+        System.out.println("R: Is buy1 executed? " + rebuiltState.getOrderBook().isExecuted("buy1"));
+        System.out.println("R: Is sell1 executed? " + rebuiltState.getOrderBook().isExecuted("sell1"));
+        System.out.println("R: Is buy2 cancelled? " + rebuiltState.getOrderBook().isCancelled("buy2"));
     }
 }

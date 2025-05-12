@@ -12,4 +12,8 @@ public class EventStore {
     public void append(Event event) {
         eventLog.add(event);
     }
+
+    public List<Event> getAllEvents() {
+        return Collections.unmodifiableList(eventLog);
+    }
 }

@@ -24,4 +24,8 @@ public class AccountManager {
         double total = trade.quantity * trade.price;
         deposit(trade.sellerUserId, total);
     }
+
+    public void reset() {
+        balances.clear();
+    }
 }
