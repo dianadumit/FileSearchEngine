@@ -1,6 +1,6 @@
 package org.example.event;
 
-import org.example.event.Event;
+import org.example.model.SystemState;
 
 public class OrderPlaced implements Event {
     public String orderId;
@@ -17,4 +17,9 @@ public class OrderPlaced implements Event {
         this.price = price;
     }
 
+    @Override
+    public void replay(SystemState state) {
+
+        state.getOrderBook().addOrder(this);
+    }
 }
